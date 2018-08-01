@@ -1,0 +1,223 @@
+.banner {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.banner .swiper-button-prev,
+.banner .swiper-button-next {
+    width: 36px;
+    z-index: 100;
+    background-color: rgba(75, 67, 15, 1);
+    height: 120px;
+}
+
+.banner .swiper-button-prev {
+    left: 0px;
+    background-image: url('../images/prev_10.jpg');
+}
+
+.banner .swiper-button-next {
+    background-image: url('../images/next_10.jpg');
+    right: 0px;
+}
+
+.banner .img-list {
+    position: relative;
+    background-image: url('../images/bgc3_07.jpg');
+    padding: 28px 58px;
+}
+
+.footer-logo,
+.inner-botton {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo a {
+    margin: 35px 0px;
+    width: 185px;
+    height: 65px;
+    background: url('../images/logox_11.png') 0px 0px no-repeat;
+}
+
+footer .inner-botton {
+    margin-bottom: 35px;
+}
+
+footer .inner-botton p {
+    width: 200px;
+    color: #fff;
+}
+
+footer .inner-botton p:nth-child(1) {
+    text-align: right;
+    margin-right: 30px;
+}
+
+footer .inner-botton p:nth-child(1) span {
+    display: block;
+    width: 115px;
+    height: 112px;
+    margin-left: 85px;
+    background: url('../images/ewm_07.jpg') 0px 0px no-repeat;
+}
+
+
+/* 内容样式 */
+
+.left-top,
+.section-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-inner {
+    padding: 30px 50px;
+}
+
+section .section-left {
+    margin-right: 100px;
+}
+
+section .left-top h2 {
+    width: 410px;
+    font-size: 32px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+section .left-bottom {
+    margin-top: 60px;
+}
+
+section .left-bottom>p {
+    color: #707378;
+}
+
+section .left-bottom p:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    height: 65px;
+    width: 420px;
+    background-color: #707378;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+section .left-bottom p span {
+    padding: 5px 12px;
+    font-size: 40px;
+    color: #fdd900;
+}
+
+section .left-bottom>p strong {
+    color: #fdd900;
+}
+
+section .section-center {
+    margin-right: 40px;
+    margin-top: 12px;
+    padding-left: 50px;
+    border-left: 2px solid #fff;
+}
+
+section .section-center ul li {
+    width: 64px;
+    height: 24px;
+    border-radius: 18px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+section .section-center ul li:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+section .section-center ul li:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+section .section-right {
+    width: 348px;
+}
+
+section .section-right .select {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .select strong {
+    color: #fdd900;
+    font-size: 32px;
+}
+
+section .select span {
+    font-size: 18px;
+    color: #fff;
+}
+
+section .style {
+    height: 58px;
+}
+
+section .size {
+    height: 95px;
+}
+
+section .style a,
+section .size a {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    /* padding: 2px 4px; */
+    border-radius: 12px;
+    background-color: #2b2e33;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+section .style a {
+    width: 75px;
+    height: 25px;
+}
+
+section .size a {
+    margin-bottom: 5px;
+    width: 64px;
+    height: 25px;
+}
+
+section .num {
+    color: #fff;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .num a {
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    width: 67px;
+    height: 38px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+}
+
+section .submit a {
+    display: block;
+    margin: 0px 55px;
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+    font-size: 28px;
+    color: #fdd900;
+    border: 2px solid #fdd900;
+    border-radius: 12px;
+}

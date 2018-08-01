@@ -1,0 +1,208 @@
+/* 代码初始化*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    display: block;
+}
+
+
+/* 头部样式 */
+
+.body-box {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/bgi_31.jpg');
+}
+
+header .inner-top {
+    display: flex;
+    justify-content: center;
+    background-color: #2b2e33;
+}
+
+header .top {
+    width: 1200px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+header .top h1 a {
+    display: block;
+    width: 190px;
+    height: 60px;
+    background: url('../images/logo_03.png') 0px 0px no-repeat;
+}
+
+header .top .left-nav {
+    width: 505px;
+}
+
+header .top .log-in {
+    display: flex;
+    width: 505px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .top .log-in i {
+    background: url(../images/cion_03.png) 0px 0px no-repeat;
+    display: block;
+    width: 28px;
+    height: 36px;
+    margin-right: 42px;
+}
+
+header .top .log-in div {
+    margin-right: 32px;
+    color: #707479;
+}
+
+header .top .log-in div a {
+    padding: 5px;
+    color: #707479;
+}
+
+
+/* 中间内容样式 */
+
+.section-box {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #2b2e33;
+}
+
+
+/* 尾部样式 */
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.footer-inner {
+    width: 1200px;
+}
+
+.footer-bottom {
+    align-items: center;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: #2b2e33;
+}
+
+.footer-bottom p {
+    text-align: center;
+    color: #585c61;
+    font-size: 14px;
+}

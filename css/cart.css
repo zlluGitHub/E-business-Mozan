@@ -1,0 +1,147 @@
+.cart-top,
+.content-top,
+.content-list {
+    display: flex;
+    align-items: center;
+}
+
+.section-box {
+    background-color: transparent;
+}
+
+section .box-img {
+    height: 48px;
+    background-image: url('../images/carttop_05.jpg');
+}
+
+section .cart-top {
+    justify-content: space-between;
+    height: 95px;
+    background-color: #fdd900;
+}
+
+section .top-left {
+    height: 60px;
+    padding-left: 20px;
+    font-size: 28px;
+    margin-left: 50px;
+    text-align: center;
+    line-height: 60px;
+    border-left: 2px solid #000;
+}
+
+section .top-left span {
+    columns: red;
+}
+
+section .top-right {
+    margin-right: 20px;
+}
+
+section .top-right span {
+    display: inline-block;
+    padding: 5px 0px;
+    margin-right: 10px;
+    border-bottom: 2px solid#000;
+}
+
+section .cart-content {
+    padding: 0px 50px;
+    background-color: #fff;
+}
+
+section .content-top {
+    border-bottom: 2px solid #2b2e33;
+    /* margin-top: 50px; */
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+section .content-top li {
+    margin-bottom: 15px;
+}
+
+section .content-top li:nth-child(1) {
+    margin-right: 10px;
+}
+
+section .content-top li:nth-child(2) {
+    margin-right: 525px;
+}
+
+section .content-top li:nth-child(3) {
+    margin-right: 135px;
+}
+
+section .content-top li:nth-child(4) {
+    margin-right: 120px;
+}
+
+section .content-top li:nth-child(5) {
+    margin-right: 67px;
+}
+
+section .content-list {
+    justify-content: flex-start;
+}
+
+section .list-img img {
+    display: inline-block;
+}
+
+section .list-input {
+    margin-right: 45px;
+}
+
+section .list-img {
+    margin-right: 10px;
+}
+
+section .list-text {
+    align-self: flex-start;
+    margin-right: 120px;
+}
+
+section .list-text h2 {
+    font-size: 16px;
+    color: #2c2d32;
+    margin-bottom: 18px;
+}
+
+section .list-text p {
+    font-size: 16px;
+    color: #70737a;
+}
+
+section .list-price {
+    margin-right: 60px;
+}
+
+section .list-num {
+    margin-right: 50px;
+}
+
+section .list-num a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 35px;
+}
+
+section .list-num span {
+    display: inline-block;
+    width: 67px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+section .list-sum {
+    margin-right: 60px;
+}
+
+section .list-delect {
+    margin-right: 45px;
+}
