@@ -1,0 +1,79 @@
+    section .top-right span:nth-child(2) {
+        border-bottom: 4px solid#000;
+    }
+    
+    section .receive-box {
+        padding: 0px 50px;
+    }
+    
+    .receive-top,
+    .list-inner,
+    .list-ri {
+        display: flex;
+    }
+    
+    section .receive-top {
+        font-size: 20px;
+        padding: 12px 0px;
+        font-weight: bold;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+    }
+    
+    section .receive-top a {
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 30px;
+    }
+    
+    .list-inner {
+        height: 100px;
+        align-items: center;
+        padding-left: 30px;
+        border: 2px solid #fff;
+        justify-content: space-between;
+    }
+    
+    .list-lf p {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    
+    .list-lf p:nth-child(1) {
+        background: url('../images/icon1_16.jpg') 0px 0px no-repeat;
+    }
+    
+    .list-lf p:nth-child(2) {
+        background: url('../images/addrss_03.jpg') 0px 0px no-repeat;
+    }
+    
+    .list-lf p:nth-child(3) {
+        background: url('../images/icon2_18.jpg') 0px 0px no-repeat;
+    }
+    
+    .list-ri {
+        justify-content: flex-end;
+    }
+    
+    .list-ri a {
+        padding-left: 38px;
+    }
+    
+    .list-ri a:nth-child(1) {
+        padding-left: 0px;
+        width: 95px;
+        height: 35px;
+        text-align: center;
+        color: #000;
+        font-size: 16px;
+    }
+    
+    .showmore a {
+        display: block;
+        text-align: center;
+        padding: 18px 0px;
+        font-weight: bold;
+        color: #000;
+        font-size: 18px;
+        background: url('../images/bgc_05.jpg');
+    }

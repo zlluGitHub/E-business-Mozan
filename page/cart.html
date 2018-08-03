@@ -16,12 +16,15 @@
         <header>
             <div class="inner-top">
                 <div class="top">
-                    <div class="left-nav"></div>
+                    <div class="left-nav">
+                        <a href="javascript:void(0);"></a>
+                    </div>
                     <h1>
                         <a href="javascript:void(0);"></a>
                     </h1>
                     <div class="log-in">
-                        <i></i>
+                        <a class="search" href="javascript:void(0);"></a>
+                        <a class="bag" href="javascript:void(0);"><i></i></a>
                         <div>
                             <a href="#">登录</a>/
                             <a href="">注册</a>
@@ -35,7 +38,7 @@
 
                 <div class="cart-top">
                     <div class="top-left">
-                        购物车[<span>99</span>件]
+                        购物车<span>[<strong>99</strong>件]</span>
                     </div>
                     <div class="top-right">
                         <span>购物车</span>
@@ -56,15 +59,15 @@
                         <li>小计</li>
                         <li>操作</li>
                     </ul>
+
                     <div class="content-inner">
+                        <!-- 单个商品 -->
                         <div class="content-list">
                             <div class="list-input">
                                 <input type="checkbox">
                             </div>
                             <div class="list-img">
                                 <img src="../images/cartpic_07.jpg" alt="">
-
-
                             </div>
                             <div class="list-text">
                                 <h2>龙之谷六周年限定礼包大Boss冰龙款男士T恤</h2>
@@ -73,31 +76,189 @@
                             </div>
                             <div class="list-price">￥79.00</div>
                             <div class="list-num">
-                                <a href="javascript:void(0);">+</a>
-                                <span>1</span>
                                 <a href="javascript:void(0);">-</a>
+                                <span>1</span>
+                                <a href="javascript:void(0);">+</a>
                             </div>
                             <div class="list-sum">￥79.00</div>
-                            <div class="list-delect">X</div>
+                            <div class="list-delect">
+                                <a href="javascript:void(0);"></a>
+                                <div class="tooltips">
+                                    <a href="javascript:void(0);">确定删除</a>
+                                    <a href="javascript:void(0);">不删除</a>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 单个商品 -->
+                        <div class="content-list">
+                            <div class="list-input">
+                                <input type="checkbox">
+                            </div>
+                            <div class="list-img">
+                                <img src="../images/cartpic_07.jpg" alt="">
+                            </div>
+                            <div class="list-text">
+                                <h2>龙之谷六周年限定礼包大Boss冰龙款男士T恤</h2>
+                                <p>款式：iPhone 5</p>
+                                <p>尺码：XL</p>
+                            </div>
+                            <div class="list-price">￥79.00</div>
+                            <div class="list-num">
+                                <a href="javascript:void(0);">-</a>
+                                <span>1</span>
+                                <a href="javascript:void(0);">+</a>
+                            </div>
+                            <div class="list-sum">￥79.00</div>
+                            <div class="list-delect">
+                                <a href="javascript:void(0);"></a>
+                                <div class="tooltips">
+                                    <a href="javascript:void(0);">确定删除</a>
+                                    <a href="javascript:void(0);">不删除</a>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 单个商品 -->
+                        <div class="content-list">
+                            <div class="list-input">
+                                <input type="checkbox">
+                            </div>
+                            <div class="list-img">
+                                <img src="../images/cartpic_07.jpg" alt="">
+                            </div>
+                            <div class="list-text">
+                                <h2>龙之谷六周年限定礼包大Boss冰龙款男士T恤</h2>
+                                <p>款式：iPhone 5</p>
+                                <p>尺码：XL</p>
+                            </div>
+                            <div class="list-price">￥79.00</div>
+                            <div class="list-num">
+                                <a href="javascript:void(0);">-</a>
+                                <span>4</span>
+                                <a href="javascript:void(0);">+</a>
+                            </div>
+                            <div class="list-sum">￥79.00</div>
+                            <div class="list-delect">
+                                <a href="javascript:void(0);"></a>
+                                <div class="tooltips">
+                                    <a href="javascript:void(0);">确定删除</a>
+                                    <a href="javascript:void(0);">不删除</a>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bottom">
+
+                    <div class="bottom-left">
+                        <div class="select-all-ipt">
+                            <input type="checkbox" id="inputall"><label for="inputall">全选</label>
+                        </div>
+                        <div class="bottom-delect"><a href="javascript:void(0);">删除</a> </div>
+                        <div class="bottom-turn"><a href="javascript:void(0);">转到愿望单</a> </div>
+                        <div class="bottom-sum">
+                            共<span class="allunm">4</span>件商品，已选择<span class="selectsum">1</span>件
+                        </div>
+                    </div>
+                    <div class="bottom-right">
+                        <div class="right-text">
+                            合计：<br>[不含运费]
+                        </div>
+                        <div class="right-price">
+                            ￥79.00
+                        </div>
+                        <a href="javascript:void(0);">去结算</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 登录层 -->
+            <div class="login-shade">
+                <div class="shade-box">
+                    <div class="login-inner">
+                        <div class="login-delect">
+                            <a href="javascript:void(0);"></a>
                         </div>
 
+                        <div class="shade-logo">
+                            <img src="../images/loginlogo_03.jpg" alt="">
+                        </div>
+                        <div class="shade-input">
+                            <label for=""></label>
+                            <input type="text">
+                        </div>
+                        <div class="shade-input">
+                            <label for=""></label>
+                            <input type="text">
+                        </div>
+                        <div class="shade-input">
+                            <input type="text">
+                            <div class="security-code"></div>
+                        </div>
+                        <div class="cleck-submit">
+                            <a href="javascript:void(0);">登录</a>
+                        </div>
+                        <div class="find-or-register">
+                            <a href="javascript:void(0);">忘记密码？</a>
+                            <a href="javascript:void(0);">注册</a>
+                        </div>
+                    </div>
+                    <div class="login-bottom">
+                        <a href="javascript:void(0);"></a>
+                        <a href="javascript:void(0);"></a>
+                        <a href="javascript:void(0);"></a>
                     </div>
                 </div>
             </div>
         </section>
         <footer>
             <div class="footer-top">
-
+                <div class="footer-top-inner">
+                    <div class="footer-left">
+                        <div class="fo-le-title">帮助信息</div>
+                        <ul>
+                            <li><a href="javascript:void(0);"> 购物指南</a></li>
+                            <li><a href="javascript:void(0);">服务中心</a></li>
+                            <li><a href="javascript:void(0);">支付方式</a></li>
+                            <li><a href="javascript:void(0);">关于我们</a></li>
+                            <li><a href="javascript:void(0);">配送方式</a></li>
+                            <li><a href="javascript:void(0);">负责条款</a></li>
+                            <li><a href="javascript:void(0);">售后服务</a></li>
+                            <li><a href="javascript:void(0);">友情链接</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle">
+                        <div class="fo-mi-title">
+                            关于我们
+                        </div>
+                        <div class="fo-mi-qrc">
+                            <img src="../images/tao_13.jpg" alt="">
+                            <img src="../images/wei_15.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="fo-ri-title">客服热线</div>
+                        <div class="fo-mi-phone">
+                            400 113 5353<br> [周一至周五 9:00-18:00]
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>
-                    北京开普乐科技有限公司©版权所有 Copyright 2015-2025 Morethan.cc All rights res
-                    <br>地址：北京市朝阳区建国路93号院4号楼4层505
-                </p>
+                <div class="footer-bto">
+                    <h2><img src="../images/logox_11.png" alt=""></h2>
+                    <p>
+                        北京开普乐科技有限公司©版权所有 Copyright 2015-2025 Morethan.cc All rights res
+                        <br>地址：北京市朝阳区建国路93号院4号楼4层505
+                    </p>
+                </div>
             </div>
+
         </footer>
     </div>
-    <script src="../js/index.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>

@@ -73,6 +73,7 @@ footer .inner-botton p:nth-child(1) span {
 
 .section-inner {
     padding: 30px 50px;
+    background-color: #2b2e33;
 }
 
 section .section-left {
@@ -186,6 +187,17 @@ section .style a {
     height: 25px;
 }
 
+section .style a:hover {
+    background-color: #fdd900;
+    width: 75px;
+    height: 25px;
+}
+
+section .style a.active,
+section .size a.active {
+    background-color: #fdd900;
+}
+
 section .size a {
     margin-bottom: 5px;
     width: 64px;
@@ -208,6 +220,10 @@ section .num a {
     height: 38px;
     border-radius: 12px;
     border: 1px solid #fff;
+}
+
+section .submit {
+    background-color: #2b2e33;
 }
 
 section .submit a {

@@ -114,7 +114,18 @@ img {
 
 /* 头部样式 */
 
+.cart-top,
+.content-top,
+.content-list,
+.cart-bottom,
+.bottom-left,
+.bottom-right {
+    display: flex;
+    align-items: center;
+}
+
 .body-box {
+    /* width: 1200px; */
     display: flex;
     flex-direction: column;
     background-image: url('../images/bgi_31.jpg');
@@ -171,17 +182,158 @@ header .top .log-in div a {
     color: #707479;
 }
 
+header .left-nav a {
+    width: 45px;
+    height: 25px;
+    background: url('../images/nav1_06.jpg') 0px 0px no-repeat;
+}
+
 
 /* 中间内容样式 */
 
 .section-box {
     width: 1200px;
     margin: 0px auto;
-    background-color: #2b2e33;
+    background-color: #fff;
+    padding-bottom: 80px;
+}
+
+section .cart-top {
+    justify-content: space-between;
+    height: 95px;
+    background-color: #fdd900;
+}
+
+section .top-left {
+    height: 60px;
+    padding-left: 20px;
+    font-size: 28px;
+    margin-left: 50px;
+    text-align: center;
+    line-height: 60px;
+    border-left: 2px solid #000;
+}
+
+section .box-img {
+    height: 48px;
+    background-image: url('../images/carttop_05.jpg');
+}
+
+section .top-right {
+    margin-right: 20px;
+}
+
+section .top-right span {
+    display: inline-block;
+    padding: 5px 0px;
+    margin-right: 10px;
+    border-bottom: 2px solid#000;
 }
 
 
-/* 尾部样式 */
+/* 其他页尾部样式 */
+
+footer .footer-bto,
+.footer-top-inner {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-top-inner {
+    color: #fff;
+    padding-top: 56px;
+    height: 274px;
+}
+
+footer .footer-bto p {
+    text-align: right;
+}
+
+footer .footer-left ul {
+    margin-top: 26px;
+    display: flex;
+    width: 280px;
+    flex-wrap: wrap;
+}
+
+footer .fo-le-title {
+    font-size: 24px;
+}
+
+footer .footer-left ul li {
+    padding-left: 40px;
+    margin-right: 36px;
+    margin-bottom: 12px;
+}
+
+footer .footer-left ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+footer .footer-left ul li:nth-child(1) {
+    background: url('../images/icons_07.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(2) {
+    background: url('../images/icons_10.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(3) {
+    background: url('../images/icons_14.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(4) {
+    background: url('../images/icons_15.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(5) {
+    background: url('../images/icons_19.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(6) {
+    background: url('../images/icons_18.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(7) {
+    background: url('../images/icons_22.jpg') 0px 0px no-repeat;
+}
+
+footer .footer-left ul li:nth-child(8) {
+    background: url('../images/icons_23.jpg') 0px 0px no-repeat;
+}
+
+footer .fo-mi-title,
+footer .fo-ri-title {
+    font-size: 24px;
+}
+
+footer .fo-mi-qrc {
+    margin-top: 26px;
+}
+
+footer .fo-mi-qrc img {
+    /* width: 200px; */
+    display: inline-block;
+}
+
+footer .fo-mi-qrc img:nth-child(1) {
+    margin-right: 30px;
+}
+
+footer .fo-mi-phone {
+    margin-top: 26px;
+}
+
+footer .fo-mi-phone {
+    padding-left: 45px;
+    background: url('../images/phone_13.jpg') 0px 5px no-repeat;
+}
+
+
+/* 首页尾部 */
 
 .footer-top {
     display: flex;
@@ -205,4 +357,213 @@ header .top .log-in div a {
     text-align: center;
     color: #585c61;
     font-size: 14px;
+}
+
+
+/* 登录样式 */
+
+.login-shade,
+.pay-box {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: rgba(145, 145, 145, 0.6);
+    position: fixed;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-shade .shade-box {
+    z-index: 200;
+    width: 420px;
+    /* height: 612px; */
+    /* background-color: #fff; */
+}
+
+.login-shade .login-inner {
+    background-color: #fff;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-shade .login-inner .login-delect {
+    width: 380px;
+    text-align: center;
+}
+
+.login-shade .login-inner .login-delect a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../images/delect_06.jpg');
+    margin-left: 360px;
+    margin-top: 20px;
+    right: 0px;
+}
+
+.login-shade .login-inner .shade-logo {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.login-inner .shade-input {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.login-inner .shade-input:nth-child(3) label {
+    border: 1px solid #babec9;
+    border-right: none;
+    width: 45px;
+    height: 45px;
+}
+
+.login-inner .shade-input:nth-child(4) label {
+    border: 1px solid #babec9;
+    border-right: none;
+    width: 45px;
+    height: 45px;
+}
+
+.login-inner .shade-input input {
+    width: 335px;
+    height: 45px;
+    border: 1px solid #babec9;
+}
+
+.login-inner .shade-input:nth-child(5) input {
+    width: 230px;
+    margin-right: 12px;
+}
+
+.login-inner .shade-input:nth-child(5) .security-code {
+    width: 136px;
+    height: 45px;
+    background: url('../images/cord_15.jpg') 0px 0px no-repeat;
+    border: 1px solid #000;
+}
+
+.login-inner .cleck-submit a {
+    margin-top: 28px;
+    display: block;
+    font-size: 22px;
+    color: #000;
+    background-color: #fdd900;
+    text-align: center;
+    line-height: 45px;
+    width: 380px;
+    height: 45px;
+}
+
+.login-inner .find-or-register {
+    display: flex;
+    width: 380px;
+    margin-top: 45px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.login-inner .find-or-register a {
+    color: #000;
+}
+
+.shade-box .login-bottom {
+    height: 65px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 3px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shade-box .login-bottom a {
+    width: 32px;
+    height: 32px;
+}
+
+.shade-box .login-bottom a:nth-child(1) {
+    background: url('../images/qq_29.jpg') center center no-repeat;
+}
+
+.shade-box .login-bottom a:nth-child(2) {
+    background: url('../images/weixin_32.jpg') center center no-repeat;
+}
+
+.shade-box .login-bottom a:nth-child(3) {
+    background: url('../images/weibo_29.jpg') center center no-repeat;
+}
+
+
+/* 支付弹出框 */
+
+.pay-inner {
+    width: 690px;
+    height: 420px;
+    background-color: #fff;
+}
+
+.pay-border {
+    padding: 0px 20px;
+}
+
+.pay-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+}
+
+.pay-top span {
+    width: 60px;
+    font-size: 18px;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.pay-top a {
+    width: 20px;
+    height: 20px;
+    background: url('../images/delect_06.jpg') center center no-repeat;
+}
+
+.pay-middle {
+    margin-bottom: 72px;
+}
+
+.pay-middle .pay-tip {
+    text-align: center;
+    padding: 46px 12px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.pay-middle .pay-click {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pay-middle .pay-click a {
+    width: 208px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #2b2e33;
+    color: #fff;
+    font-size: 16px;
+}
+
+.pay-bottom {
+    padding: 27px;
+    font-size: 12px;
+    color: #24a7eb;
+    text-align: center;
+    border-top: 1px solid #000;
 }
