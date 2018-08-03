@@ -8,7 +8,10 @@
     
     .receive-top,
     .list-inner,
-    .list-ri {
+    .list-ri,
+    .sm-dw,
+    .gd-list,
+    .send-sty {
         display: flex;
     }
     
@@ -23,6 +26,7 @@
     section .receive-top a {
         font-size: 20px;
         font-weight: bold;
+        color: #000;
         padding-left: 30px;
     }
     
@@ -56,7 +60,9 @@
     }
     
     .list-ri a {
-        padding-left: 38px;
+        color: #000;
+        padding-left: 25px;
+        margin-left: 30px;
     }
     
     .list-ri a:nth-child(1) {
@@ -68,6 +74,14 @@
         font-size: 16px;
     }
     
+    .list-ri a:nth-child(2) {
+        background: url('../images/write_03.jpg') 0px 0px no-repeat;
+    }
+    
+    .list-ri a:nth-child(3) {
+        background: url('../images/delect_07.jpg') 0px 4px no-repeat;
+    }
+    
     .showmore a {
         display: block;
         text-align: center;
@@ -76,4 +90,175 @@
         color: #000;
         font-size: 18px;
         background: url('../images/bgc_05.jpg');
+    }
+    
+    .sm-dw {
+        padding: 12px 0px;
+        border-bottom: 2px solid #2b2e33;
+        justify-content: space-between;
+    }
+    
+    .sm-dw a {
+        color: #000;
+    }
+    
+    .gd-list {
+        font-size: 12px;
+        align-items: center;
+    }
+    
+    .gd-list h2 {
+        font-size: 14px;
+        width: 546px;
+        margin-left: 12px;
+    }
+    
+    .gd-list .gd-style {
+        width: 120px;
+    }
+    
+    .gd-list .dg-size {
+        width: 165px;
+    }
+    
+    .gd-list .dg-price {
+        width: 135px;
+    }
+    
+    .gd-list .dg-num {
+        width: 50px;
+    }
+    
+    .send-sty {
+        align-items: center;
+        height: 108px;
+        font-weight: bold;
+    }
+    
+    .send-sty .sd-logistics {
+        margin-left: 50px;
+    }
+    
+    .send-sty .sd-pay a,
+    .sd-logistics a {
+        display: inline-block;
+        width: 125px;
+        margin-left: 15px;
+        padding: 12px 0px;
+        text-align: center;
+        font-weight: lighter;
+        border: 2px solid #babec9;
+    }
+    
+    .send-sty .sd-pay {
+        margin-left: 12px;
+    }
+    
+    .send-sty .sd-pay a {
+        border: 2px solid #fdd900;
+    }
+    
+    .send-sty .sd-invoice {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    
+    .send-sty .sd-invoice a:nth-child(4) {
+        width: 55px;
+        background-color: #fdd900;
+        border: 2px solid #fdd900;
+    }
+    
+    .send-sty .sd-invoice a {
+        width: 96px;
+        padding: 12px 0px;
+        margin-left: 8px;
+        text-align: center;
+        color: #000;
+        font-weight: lighter;
+        border: 2px solid #babec9;
+    }
+    
+    .send-sty .sd-invoice input {
+        width: 172px;
+        margin-left: 8px;
+        height: 46px;
+        text-align: center;
+        border: 1px solid #babec9;
+    }
+    
+    .remark textarea {
+        width: 100%;
+        height: 110px;
+        border-top: 1px solid #000;
+    }
+    
+    .remark div {
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+    
+    .statistics ul {
+        display: flex;
+    }
+    
+    .statistics ul li {
+        padding: 12px 0px;
+    }
+    
+    .statistics .ul-top {
+        padding-top: 30px;
+        padding-left: 25px;
+        padding-right: 32px;
+        border-bottom: 2px solid #000;
+    }
+    
+    .ul-top li:nth-child(1) {
+        width: 170px;
+    }
+    
+    .ul-top li:nth-child(2) {
+        width: 200px;
+    }
+    
+    .ul-top li:nth-child(3) {
+        width: 180px;
+    }
+    
+    .ul-top li:nth-child(4) {
+        width: 180px;
+    }
+    
+    .ul-top li:nth-child(5) {
+        width: 212px;
+    }
+    
+    .ul-top li:nth-child(6) {
+        width: 100px;
+    }
+    
+    .statistics .ul-down {
+        justify-content: space-around;
+    }
+    
+    .statistics .ul-down li:last-child {
+        font-size: 30px;
+        color: red;
+    }
+    
+    .submit-order {
+        margin-top: 42px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .submit-order a {
+        display: block;
+        width: 220px;
+        height: 60px;
+        background-color: #fdd900;
+        text-align: center;
+        line-height: 60px;
+        color: #000;
     }
