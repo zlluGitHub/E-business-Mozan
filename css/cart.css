@@ -148,48 +148,7 @@ section .list-delect>a {
 }
 
 
-/* 气泡提示样式 */
-
-section .list-delect .tooltips {
-    top: 35px;
-    left: -150px;
-    display: none;
-    justify-content: center;
-    box-shadow: 0px 0px 6px 3px #fbb7b6;
-    position: absolute;
-}
-
-section .list-delect .tooltips i {
-    display: block;
-    width: 0;
-    height: 0;
-    border-width: 0 10px 15px;
-    border-style: solid;
-    border-color: transparent transparent #2b2e33;
-    ;
-    position: absolute;
-    top: -10px;
-    left: 155px;
-}
-
-section .list-delect .tooltips a {
-    text-align: center;
-    line-height: 32px;
-    font-size: 14px;
-    color: #fff;
-}
-
-section .list-delect .tooltips a:nth-child(1) {
-    background-color: red;
-    width: 72px;
-    height: 32px;
-}
-
-section .list-delect .tooltips a:nth-child(2) {
-    width: 125px;
-    height: 32px;
-    background-color: #2b2e33;
-}
+/* 气泡提示 */
 
 section .list-delect:hover .tooltips {
     display: flex;
@@ -215,8 +174,9 @@ section .select-all-ipt {
     margin-left: 12px;
 }
 
-section .select-all-ipt label {
-    margin-left: 12px;
+section .select-all-ipt label,
+.select-all label {
+    margin-left: 25px;
 }
 
 section .bottom-delect {

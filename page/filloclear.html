@@ -105,7 +105,7 @@
                                 <P class="phone">186****5149</P>
                             </div>
                             <div class="list-ri">
-                                <a href="javascript:void:(0);">默认</a>
+                                <a href="javascript:void:(0);">设为默认</a>
                                 <a href="javascript:void:(0);">编辑</a>
                                 <div class="list-delect">
                                     <a href="javascript:void:(0);">删除</a>
@@ -193,39 +193,97 @@
                         </div>
 
                     </div>
-                    <div class="cart-clear-title">
-                        <span>备注</span>
-                        <span>清算</span>
+                    <div class="remark">
+                        <div>备注</div>
+                        <textarea name="msg" cols="45" rows="10"></textarea>
                     </div>
-                    <div class="cart-clear">
-
-                        <div class="remark-clear">
-                            <textarea name="msg" cols="45" rows="10"></textarea>
-                        </div>
-                        <div class="statistics-clear">
-
-                            <ul class="ul-top-clear">
-                                <li>2件商品，总金额：</li>
-                                <li>优惠金额：</li>
-                                <li>运费：</li>
-                                <li>应付总额：</li>
-
-                            </ul>
-                            <ul class="ul-down-clear">
-                                <li>￥79.00</li>
-                                <li>-￥0.00</li>
-                                <li>￥0.00</li>
-                                <li>￥168.00</li>
-
-                            </ul>
-                        </div>
+                    <div class="statistics">
+                        <ul class="ul-top">
+                            <li>数量</li>
+                            <li>单价</li>
+                            <li>小计</li>
+                            <li>优惠</li>
+                            <li>运费</li>
+                            <li>实际应付</li>
+                        </ul>
+                        <ul class="ul-down">
+                            <li>2</li>
+                            <li>x</li>
+                            <li>￥79.00</li>
+                            <li>=</li>
+                            <li>￥158.00</li>
+                            <li>-</li>
+                            <li>￥0.00</li>
+                            <li>+</li>
+                            <li>￥10.00</li>
+                            <li>=</li>
+                            <li>￥168.00</li>
+                        </ul>
                     </div>
                     <div class="submit-order">
                         <a href="">提交订单</a>
                     </div>
                 </div>
             </div>
-
+            <!-- 新增地址 -->
+            <div class="address-box">
+                <div class="address-warp">
+                    <div class="aw-top">
+                        <span>新增地址</span>
+                        <a href=""></a>
+                    </div>
+                    <div class="re-middle">
+                        <div class="md-lf">
+                            <label for="">
+                                <span>*</span> 收货人</label>
+                            <input type="text">
+                            <div class="lf-tip">请填写收货人</div>
+                        </div>
+                        <div class="md-ri">
+                            <label for="">
+                                <span>*</span> 联系电话</label>
+                            <input type="text">
+                            <div class="lf-tip">填写的手机号错误</div>
+                        </div>
+                    </div>
+                    <div class="ad-middle">
+                        <!-- 三级联动选项框 -->
+                        <div id="city">
+                            <select class="prov"></select>
+                            <select class="city" disabled="disabled"></select>
+                            <select class="dist" disabled="disabled"></select>
+                        </div>
+                    </div>
+                    <div class="de-middle">
+                        <label for=""><span>*</span> 详细地址</label>
+                        <input type="">
+                        <div class="lf-tip">请填写详细地址！</div>
+                    </div>
+                    <div class="alias">
+                        <div class="as-lf">
+                            <label for="">地址别名</label>
+                            <input type="text">
+                        </div>
+                        <div class="as-ri">
+                            <div>常用别名</div>
+                            <div class="ri-select">
+                                <a href="">家</a>
+                                <a href="">公司</a>
+                                <a href="">父母家</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bt-submit">
+                        <div class="bs-lf">
+                            <input type="checkbox">
+                            <label for="">设为默认地址</label>
+                        </div>
+                        <div class="bs-ri">
+                            <a href="">保存地址</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="footer-top">
@@ -259,6 +317,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <div class="footer-bottom">
                 <div class="footer-bto">
@@ -272,6 +332,22 @@
 
         </footer>
     </div>
+    <pre name="code" class="html"></pre>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="../js/city.min.js"></script>
+    <script src="../js/cityselect.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#city").citySelect({
+                prov: "陕西",
+                city: "西安",
+                dist: "雁塔区",
+                nodata: "none"
+            });
+        });
+    </script>
+
 </body>
 
 </html>
