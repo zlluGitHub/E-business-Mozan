@@ -124,6 +124,19 @@ img {
     align-items: center;
 }
 
+header .left-nav {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+
+header .log-in .search {
+    width: 28px;
+    height: 36px;
+    margin-right: 67px;
+    background: url('../images/sousuo_03.jpg') 0px 0px no-repeat;
+}
+
 .body-box {
     /* width: 1200px; */
     display: flex;
@@ -418,6 +431,14 @@ footer .fo-mi-phone {
 }
 
 .login-inner .shade-input:nth-child(3) label {
+    background: url('../images/ren_06.jpg') center center no-repeat;
+}
+
+.login-inner .shade-input:nth-child(4) label {
+    background: url('../images/suo_07.jpg') center center no-repeat;
+}
+
+.login-inner .shade-input:nth-child(3) label {
     border: 1px solid #babec9;
     border-right: none;
     width: 45px;
@@ -432,7 +453,8 @@ footer .fo-mi-phone {
 }
 
 .login-inner .shade-input input {
-    width: 335px;
+    padding-left: 8px;
+    width: 327px;
     height: 45px;
     border: 1px solid #babec9;
 }
@@ -471,6 +493,32 @@ footer .fo-mi-phone {
 
 .login-inner .find-or-register a {
     color: #000;
+}
+
+.login-inner .shade-input input.active {
+    border: 1px solid red;
+}
+
+
+/* placeholder属性颜色设置 */
+
+input.pladerecolo::-webkit-input-placeholder {
+    color: red;
+}
+
+input.pladerecolo::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: red;
+}
+
+input.pladerecolo:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: red;
+}
+
+input.pladerecolo:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
 }
 
 .shade-box .login-bottom {

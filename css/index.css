@@ -66,18 +66,21 @@ footer .inner-botton p:nth-child(1) span {
 /* 内容样式 */
 
 .left-top,
-.section-inner {
+.section-inner,
+.time-tip {
     display: flex;
     justify-content: space-between;
 }
 
 .section-inner {
+    height: 330px;
     padding: 30px 50px;
     background-color: #2b2e33;
 }
 
 section .section-left {
     margin-right: 100px;
+    width: 525px;
 }
 
 section .left-top h2 {
@@ -89,6 +92,7 @@ section .left-top h2 {
 
 section .left-bottom {
     margin-top: 60px;
+    position: relative;
 }
 
 section .left-bottom>p {
@@ -97,7 +101,7 @@ section .left-bottom>p {
 
 section .left-bottom p:nth-child(2) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 12px;
     height: 65px;
     width: 420px;
@@ -106,14 +110,57 @@ section .left-bottom p:nth-child(2) {
     margin-top: 5px;
 }
 
-section .left-bottom p span {
-    padding: 5px 12px;
-    font-size: 40px;
+section .left-bottom .time-content span {
+    padding: 0px 12px;
+    font-size: 34px;
     color: #fdd900;
 }
 
 section .left-bottom>p strong {
     color: #fdd900;
+}
+
+section .left-bottom .share {
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+section .left-bottom .time-tip {
+    position: absolute;
+    bottom: 55px;
+    width: 365px;
+    padding: 0px 30px;
+    color: #fdd900;
+    left: 0px;
+}
+
+section .left-bottom .lb-other {
+    position: absolute;
+    top: 0px;
+    right: -65px;
+}
+
+section .left-bottom .lb-other span {
+    display: block;
+    color: #686b70;
+    margin-bottom: 6px;
+}
+
+section .share a:nth-child(1) {
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 7px 14px;
+    padding-left: 30px;
+    background: url(../images/xing_03.jpg) 8px 10px no-repeat;
+    margin-right: 8px;
+}
+
+section .share a:nth-child(2) {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 section .section-center {
@@ -141,6 +188,22 @@ section .section-center ul li:nth-child(4) {
     margin-bottom: 30px;
 }
 
+section .section-center {
+    position: relative;
+}
+
+section .section-center .zhu {
+    position: absolute;
+    width: 300px;
+    left: 48px;
+    color: #fff;
+    bottom: 0px;
+}
+
+section .section-center .zhu strong {
+    color: #fdd900;
+}
+
 section .section-right {
     width: 348px;
 }
@@ -166,7 +229,7 @@ section .style {
 }
 
 section .size {
-    height: 95px;
+    height: 85px;
 }
 
 section .style a,
@@ -226,9 +289,14 @@ section .submit {
     background-color: #2b2e33;
 }
 
+section .submit .sb-line {
+    padding-top: 25px;
+    border-top: 1px solid #4f4f4f;
+    margin: 0px 55px;
+}
+
 section .submit a {
     display: block;
-    margin: 0px 55px;
     text-align: center;
     height: 90px;
     line-height: 90px;

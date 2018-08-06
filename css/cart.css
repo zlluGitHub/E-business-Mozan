@@ -1,14 +1,5 @@
-header .left-nav {
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-}
-
-header .log-in .search {
-    width: 28px;
-    height: 36px;
-    margin-right: 67px;
-    background: url('../images/sousuo_03.jpg') 0px 0px no-repeat;
+section {
+    min-height: 620px;
 }
 
 section .box-wukong {

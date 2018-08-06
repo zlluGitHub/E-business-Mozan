@@ -1,500 +1,634 @@
-            section .top-right span:nth-child(2) {
-                border-bottom: 4px solid#000;
-            }
-            
-            section .receive-box {
-                padding: 0px 50px;
-            }
-            
-            .receive-top,
-            .list-inner,
-            .list-ri,
-            .sm-dw,
-            .gd-list,
-            .send-sty {
-                display: flex;
-            }
-            
-            section .receive-top {
-                font-size: 20px;
-                padding: 12px 0px;
-                font-weight: bold;
-                justify-content: space-between;
-                border-bottom: 1px solid #000;
-            }
-            
-            section .receive-top a {
-                font-size: 20px;
-                font-weight: bold;
-                color: #000;
-                padding-left: 30px;
-            }
-            
-            .list-inner {
-                height: 100px;
-                align-items: center;
-                padding-left: 30px;
-                border: 2px solid #fff;
-                justify-content: space-between;
-                border-bottom: 2px solid #d1d7e3;
-            }
-            
-            .list-lf p {
-                font-size: 14px;
-                padding-left: 20px;
-            }
-            
-            .list-lf p:nth-child(1) {
-                background: url('../images/icon1_16.jpg') 0px 0px no-repeat;
-            }
-            
-            .list-lf p:nth-child(2) {
-                background: url('../images/addrss_03.jpg') 0px 0px no-repeat;
-            }
-            
-            .list-lf p:nth-child(3) {
-                background: url('../images/icon2_18.jpg') 0px 0px no-repeat;
-            }
-            
-            .list-ri {
-                justify-content: flex-end;
-            }
-            
-            .list-ri>a,
-            .list-ri>div {
-                color: #000;
-                padding-left: 25px;
-                margin-left: 30px;
-                height: 35px;
-                text-align: center;
-                line-height: 35px;
-            }
-            
-            .list-ri>a:nth-child(1) {
-                padding-left: 0px;
-                width: 95px;
-                height: 35px;
-                text-align: center;
-                /* color: #000; */
-                color: #fff;
-                background-color: #2b2e33;
-                font-size: 16px;
-            }
-            
-            .list-ri>a:nth-child(2) {
-                background: url('../images/write_03.jpg') 0px center no-repeat;
-            }
-            
-            .list-ri .list-delect>a {
-                padding-left: 25px;
-                color: #000;
-                background: url('../images/delect_07.jpg') 0px 4px no-repeat;
-            }
-            /* 气泡提示 */
-            
-            section .list-delect {
-                position: relative;
-            }
-            
-            section .list-delect:hover .tooltips {
-                display: flex;
-                left: -115px;
-            }
-            /* 显示更多 */
-            
-            .showmore {
-                margin-top: 18px;
-            }
-            
-            .showmore a {
-                display: block;
-                text-align: center;
-                padding: 18px 0px;
-                font-weight: bold;
-                color: #000;
-                font-size: 18px;
-                background: url('../images/bgc_05.jpg');
-            }
-            
-            .sm-dw {
-                padding: 12px 0px;
-                border-bottom: 2px solid #2b2e33;
-                justify-content: space-between;
-                margin-top: 50px;
-            }
-            
-            .sm-dw a {
-                color: #000;
-            }
-            
-            .sm-dw span {
-                font-weight: bold;
-                color: #000;
-            }
-            
-            .goods-mg {
-                border-bottom: 2px solid #000;
-            }
-            
-            .gd-list {
-                font-size: 12px;
-                padding: 10px 0px;
-                align-items: center;
-            }
-            
-            .gd-list h2 {
-                font-size: 14px;
-                width: 546px;
-                margin-left: 12px;
-            }
-            
-            .gd-list .gd-style {
-                width: 120px;
-            }
-            
-            .gd-list .dg-size {
-                width: 165px;
-            }
-            
-            .gd-list .dg-price {
-                width: 135px;
-            }
-            
-            .gd-list .dg-num {
-                width: 50px;
-            }
-            
-            .send-sty {
-                align-items: center;
-                height: 108px;
-                font-weight: bold;
-            }
-            
-            .send-sty .sd-logistics {
-                margin-left: 50px;
-            }
-            
-            .send-sty .sd-pay a,
-            .sd-logistics a {
-                display: inline-block;
-                width: 125px;
-                margin-left: 15px;
-                padding: 12px 0px;
-                text-align: center;
-                font-weight: lighter;
-                border: 2px solid #babec9;
-            }
-            
-            .send-sty .sd-pay {
-                margin-left: 12px;
-            }
-            
-            .send-sty .sd-pay a {
-                border: 2px solid #fdd900;
-            }
-            
-            .send-sty .sd-invoice {
-                display: flex;
-                align-items: center;
-                margin-left: 50px;
-            }
-            
-            .send-sty .sd-invoice a:nth-child(4) {
-                width: 55px;
-                background-color: #fdd900;
-                border: 2px solid #fdd900;
-            }
-            
-            .send-sty .sd-invoice a {
-                width: 96px;
-                padding: 12px 0px;
-                margin-left: 8px;
-                text-align: center;
-                color: #000;
-                font-weight: lighter;
-                border: 2px solid #babec9;
-            }
-            
-            .send-sty .sd-invoice input {
-                width: 172px;
-                margin-left: 8px;
-                height: 46px;
-                text-align: center;
-                border: 1px solid #babec9;
-            }
-            
-            .remark textarea {
-                width: 100%;
-                height: 110px;
-                border-top: 1px solid #000;
-            }
-            
-            .remark div {
-                margin-bottom: 12px;
-                font-weight: bold;
-            }
-            
-            .statistics ul {
-                display: flex;
-            }
-            
-            .statistics ul li {
-                padding: 12px 0px;
-            }
-            
-            .statistics .ul-top {
-                padding-top: 30px;
-                padding-left: 25px;
-                padding-right: 32px;
-                border-bottom: 2px solid #000;
-            }
-            
-            .ul-top li:nth-child(1) {
-                width: 170px;
-            }
-            
-            .ul-top li:nth-child(2) {
-                width: 200px;
-            }
-            
-            .ul-top li:nth-child(3) {
-                width: 180px;
-            }
-            
-            .ul-top li:nth-child(4) {
-                width: 180px;
-            }
-            
-            .ul-top li:nth-child(5) {
-                width: 212px;
-            }
-            
-            .ul-top li:nth-child(6) {
-                width: 100px;
-            }
-            
-            .statistics .ul-down {
-                justify-content: space-around;
-            }
-            
-            .statistics .ul-down li:last-child {
-                font-size: 30px;
-                color: red;
-            }
-            
-            .submit-order {
-                margin-top: 42px;
-                display: flex;
-                justify-content: flex-end;
-            }
-            
-            .submit-order a {
-                display: block;
-                width: 220px;
-                font-size: 26px;
-                height: 60px;
-                background-color: #fdd900;
-                text-align: center;
-                line-height: 60px;
-                color: #000;
-            }
-            /* 新增地址  */
-            
-            .address-box {
-                display: flex;
-            }
-            
-            .address-warp {
-                width: 650px;
-                padding: 20px;
-                border: 1px solid #babec9;
-                background-color: #fff;
-            }
-            
-            .address-warp input {
-                height: 25px;
-                margin-top: 5px;
-                border: 1px solid #babec9;
-            }
-            
-            .aw-top,
-            .re-middle,
-            .alias,
-            .bt-submit {
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .address-warp>div {
-                margin-bottom: 15px;
-            }
-            
-            .aw-top {
-                border-bottom: 2px solid #000;
-                padding-bottom: 15px;
-                align-items: center;
-            }
-            
-            .aw-top span {
-                font-size: 22px;
-            }
-            
-            .aw-top a {
-                width: 15px;
-                height: 15px;
-                background: url('../images/delect_06.jpg') center center no-repeat;
-                right: 0px;
-            }
-            
-            .re-middle .md-lf,
-            .md-ri {
-                position: relative;
-            }
-            
-            .md-lf,
-            .md-ri {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .md-lf {
-                width: 210px;
-            }
-            
-            .md-lf div {
-                top: 0px;
-                right: 0px;
-                position: absolute;
-            }
-            
-            .md-ri div {
-                top: 0px;
-                right: 0px;
-                position: absolute;
-            }
-            
-            .md-ri {
-                width: 430px;
-            }
-            
-            .md-ri input {
-                height: 25px;
-            }
-            
-            .de-middle {
-                display: flex;
-                position: relative;
-                flex-direction: column;
-            }
-            
-            .de-middle div {
-                top: 0px;
-                right: 0px;
-                position: absolute;
-            }
-            
-            .as-lf,
-            .as-ri {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .as-ri>div {
-                margin-bottom: 5px;
-            }
-            
-            .as-lf input {
-                width: 420px;
-            }
-            
-            .ri-select {
-                display: flex;
-            }
-            
-            .ri-select a {
-                width: 68px;
-                height: 25px;
-                color: #000;
-                margin-left: 3px;
-                border: 1px solid #babec9;
-                text-align: center;
-                line-height: 25px;
-            }
-            
-            .bs-ri a {
-                display: block;
-                width: 210px;
-                height: 52px;
-                text-align: center;
-                line-height: 52px;
-                background-color: #fdd900;
-                color: #000;
-                font-size: 24px;
-            }
-            
-            label span,
-            .lf-tip {
-                color: red;
-            }
-            
-            .bs-lf {
-                display: flex;
-                align-items: center;
-            }
-            /* 清算购物车 */
-            
-            .cart-clear,
-            .cart-clear-title {
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .cart-clear-title span:nth-child(2) {
-                width: 725px;
-                text-align: right;
-                border-bottom: 2px solid #2b2e33;
-            }
-            
-            .cart-clear-title {
-                font-size: 24px;
-                font-weight: bold;
-                color: #000;
-            }
-            
-            .cart-clear-title span {
-                padding-bottom: 15px;
-            }
-            
-            .cart-clear {
-                height: 140px;
-            }
-            
-            .remark-clear textarea {
-                width: 350px;
-            }
-            
-            .statistics-clear {
-                display: flex;
-                justify-content: flex-end;
-                width: 725px;
-                margin-top: 15px;
-            }
-            
-            .statistics-clear ul:nth-child(1) {
-                width: 168px;
-            }
-            
-            .statistics-clear ul:nth-child(2) {
-                width: 168px;
-            }
-            
-            .statistics-clear ul li {
-                text-align: right;
-                height: 35px;
-                line-height: 35px;
-            }
-            
-            .statistics-clear .ul-down-clear li:last-child {
-                color: red;
-                font-size: 24px;
-            }
+section .top-right span:nth-child(2) {
+    border-bottom: 4px solid#000;
+}
+
+section .receive-box {
+    padding: 0px 50px;
+}
+
+.receive-top,
+.list-inner,
+.list-ri,
+.sm-dw,
+.gd-list,
+.send-sty {
+    display: flex;
+}
+
+section .receive-top {
+    font-size: 20px;
+    padding: 12px 0px;
+    font-weight: bold;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+section .receive-top a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding-left: 30px;
+}
+
+.list-inner {
+    height: 100px;
+    position: relative;
+    align-items: center;
+    padding: 0px 30px;
+    border: 2px solid #fff;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d7e3;
+}
+
+.receive-list .list-inner:nth-child(3) {
+    border-bottom: 2px solid #fff;
+}
+
+.receive-list i {
+    position: absolute;
+}
+
+.receive-list .active>i {
+    width: 15px;
+    height: 15px;
+    bottom: 0px;
+    left: 0px;
+    background: url('../images/true_03.jpg') center center no-repeat;
+}
+
+.receive-list>.active {
+    border: 2px solid #fdd900;
+}
+
+.list-lf p {
+    font-size: 14px;
+    padding: 2px 0px;
+    padding-left: 20px;
+}
+
+.list-lf p:nth-child(1) {
+    background: url('../images/icon1_16.jpg') 0px 0px no-repeat;
+}
+
+.list-lf p:nth-child(2) {
+    background: url('../images/addrss_03.jpg') 0px 0px no-repeat;
+}
+
+.list-lf p:nth-child(3) {
+    background: url('../images/icon2_18.jpg') 0px 0px no-repeat;
+}
+
+.list-ri {
+    justify-content: flex-end;
+}
+
+.list-ri>a,
+.list-ri>div {
+    color: #000;
+    padding-left: 25px;
+    margin-left: 30px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.list-ri>a:nth-child(1) {
+    padding-left: 0px;
+    width: 95px;
+    height: 35px;
+    text-align: center;
+    color: #000;
+    /* background-color: #2b2e33; */
+    font-size: 16px;
+}
+
+.list-ri>a.active:nth-child(1) {
+    background-color: #2b2e33;
+    color: #fff;
+}
+
+.list-ri>a:nth-child(2) {
+    background: url('../images/write_03.jpg') 0px center no-repeat;
+}
+
+.list-ri .list-delect>a {
+    padding-left: 25px;
+    color: #000;
+    background: url('../images/delect_07.jpg') 0px 4px no-repeat;
+}
+
+
+/* 气泡提示 */
+
+section .list-delect {
+    position: relative;
+}
+
+section .list-delect:hover .tooltips {
+    display: flex;
+    left: -115px;
+}
+
+
+/* 显示更多 */
+
+.showmore {
+    margin-top: 18px;
+}
+
+.showmore a {
+    display: block;
+    text-align: center;
+    padding: 18px 0px;
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    background: url('../images/bgc_05.jpg');
+}
+
+.sm-dw {
+    padding: 12px 0px;
+    border-bottom: 2px solid #2b2e33;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sm-dw a {
+    color: #000;
+}
+
+.sm-dw span {
+    font-weight: bold;
+    color: #000;
+}
+
+.goods-mg {
+    border-bottom: 2px solid #000;
+}
+
+.gd-list {
+    font-size: 12px;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.gd-list h2 {
+    font-size: 14px;
+    width: 546px;
+    margin-left: 12px;
+}
+
+.gd-list .gd-style {
+    width: 120px;
+}
+
+.gd-list .dg-size {
+    width: 165px;
+}
+
+.gd-list .dg-price {
+    width: 135px;
+}
+
+.gd-list .dg-num {
+    width: 50px;
+}
+
+.send-sty {
+    align-items: center;
+    height: 108px;
+    font-weight: bold;
+}
+
+.send-sty .sd-logistics {
+    margin-left: 50px;
+}
+
+.send-sty .sd-pay a,
+.sd-logistics a {
+    display: inline-block;
+    width: 125px;
+    margin-left: 15px;
+    padding: 12px 0px;
+    text-align: center;
+    font-weight: lighter;
+    border: 2px solid #babec9;
+}
+
+.send-sty .sd-pay {
+    margin-left: 12px;
+}
+
+.send-sty a {
+    position: relative;
+    color: #000;
+}
+
+.send-sty a.active i {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    bottom: 0px;
+    left: 0px;
+    color: #000;
+    background: url('../images/true_03.jpg') center center no-repeat;
+}
+
+.send-sty a.active {
+    border: 2px solid #fdd900;
+}
+
+.send-sty .sd-invoice a.active {
+    border: 2px solid #fdd900;
+}
+
+.send-sty .sd-invoice {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.send-sty .sd-invoice a:nth-child(4) {
+    width: 55px;
+    background-color: #fdd900;
+    border: 2px solid #fdd900;
+}
+
+.send-sty .sd-invoice a {
+    width: 96px;
+    padding: 12px 0px;
+    margin-left: 8px;
+    text-align: center;
+    color: #000;
+    font-weight: lighter;
+    border: 2px solid #babec9;
+}
+
+.send-sty .sd-invoice input {
+    width: 172px;
+    margin-left: 8px;
+    height: 46px;
+    text-align: center;
+    border: 1px solid #babec9;
+}
+
+.remark textarea {
+    width: 100%;
+    height: 110px;
+    border-top: 1px solid #000;
+}
+
+.remark div {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.statistics ul {
+    display: flex;
+}
+
+.statistics ul li {
+    padding: 12px 0px;
+}
+
+.statistics .ul-top {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 32px;
+    border-bottom: 2px solid #000;
+}
+
+.ul-top li:nth-child(1) {
+    width: 170px;
+}
+
+.ul-top li:nth-child(2) {
+    width: 200px;
+}
+
+.ul-top li:nth-child(3) {
+    width: 180px;
+}
+
+.ul-top li:nth-child(4) {
+    width: 180px;
+}
+
+.ul-top li:nth-child(5) {
+    width: 212px;
+}
+
+.ul-top li:nth-child(6) {
+    width: 100px;
+}
+
+.statistics .ul-down {
+    justify-content: space-around;
+}
+
+.statistics .ul-down li:last-child {
+    font-size: 30px;
+    color: red;
+}
+
+.submit-order {
+    margin-top: 42px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-order a {
+    display: block;
+    width: 220px;
+    font-size: 26px;
+    height: 60px;
+    background-color: #fdd900;
+    text-align: center;
+    line-height: 60px;
+    color: #000;
+}
+
+
+/* 新增地址  */
+
+.address-box {
+    display: none;
+    /* display: flex; */
+}
+
+.address-warp {
+    width: 650px;
+    padding: 20px;
+    border: 1px solid #babec9;
+    background-color: #fff;
+}
+
+.address-warp input {
+    padding-left: 6px;
+    height: 25px;
+    margin-top: 5px;
+    border: 1px solid #babec9;
+}
+
+.aw-top,
+.re-middle,
+.alias,
+.bt-submit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-warp>div {
+    margin-bottom: 15px;
+}
+
+.aw-top {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.aw-top span {
+    font-size: 22px;
+}
+
+.aw-top a {
+    width: 15px;
+    height: 15px;
+    background: url('../images/delect_06.jpg') center center no-repeat;
+    right: 0px;
+}
+
+.re-middle .md-lf,
+.md-ri {
+    position: relative;
+}
+
+.md-lf,
+.md-ri {
+    display: flex;
+    flex-direction: column;
+}
+
+.md-lf {
+    width: 210px;
+}
+
+.md-lf div {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+.md-ri div {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+.md-ri {
+    width: 430px;
+}
+
+.md-ri input {
+    height: 25px;
+}
+
+.de-middle {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.de-middle div {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+.as-lf,
+.as-ri {
+    display: flex;
+    flex-direction: column;
+}
+
+.as-ri>div {
+    margin-bottom: 5px;
+}
+
+.as-lf input {
+    width: 420px;
+}
+
+.ri-select {
+    display: flex;
+}
+
+.ri-select a {
+    width: 68px;
+    height: 25px;
+    color: #000;
+    margin-left: 3px;
+    border: 1px solid #babec9;
+    text-align: center;
+    line-height: 25px;
+}
+
+.bs-ri a {
+    display: block;
+    width: 210px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #fdd900;
+    color: #000;
+    font-size: 24px;
+}
+
+label span,
+.lf-tip {
+    color: red;
+}
+
+.bs-lf {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 三级联动样式 */
+
+#city {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selecttip {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.selecttip div.sl-tip {
+    color: red;
+}
+
+.selecttip div span {
+    color: red;
+}
+
+select {
+    width: 205px;
+    height: 28px;
+    border: solid 1px #babec9;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 6px;
+    background: url('../images/true1_03.jpg') right center no-repeat;
+    /* margin-left: 8px; */
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+
+select::-ms-expand {
+    display: none;
+}
+
+#city select:nth-child(1) {
+    margin-left: 0px;
+}
+
+.ri-select a {
+    position: relative;
+}
+
+.ri-select a i {
+    left: 0px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.ri-select a.active i {
+    background: url('../images/true_03.jpg') center center no-repeat;
+    background-size: 100%;
+}
+
+.ri-select a.active {
+    border: 1px solid #fdd900;
+}
+
+
+/* 清算购物车 */
+
+.cart-clear,
+.cart-clear-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-clear-title span:nth-child(2) {
+    width: 725px;
+    text-align: right;
+    border-bottom: 2px solid #2b2e33;
+}
+
+.cart-clear-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.cart-clear-title span {
+    padding-bottom: 15px;
+}
+
+.cart-clear {
+    height: 140px;
+}
+
+.remark-clear textarea {
+    width: 350px;
+}
+
+.statistics-clear {
+    display: flex;
+    justify-content: flex-end;
+    width: 725px;
+    margin-top: 15px;
+}
+
+.statistics-clear ul:nth-child(1) {
+    width: 168px;
+}
+
+.statistics-clear ul:nth-child(2) {
+    width: 168px;
+}
+
+.statistics-clear ul li {
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+}
+
+.statistics-clear .ul-down-clear li:last-child {
+    color: red;
+    font-size: 24px;
+}
+
+.bt-submit .bs-lf label {
+    margin-left: 20px;
+}
+
+.bt-submit .ip-lable::before {
+    top: 14px;
+}
+
+.bt-submit .ip-lable::after {
+    top: 16px;
+}

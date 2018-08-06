@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>购物车</title>
-
+    <title>订单提交</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/order.css">
 </head>
@@ -20,7 +20,7 @@
                         <a href="javascript:void(0);"></a>
                     </div>
                     <h1>
-                        <a href="javascript:void(0);"></a>
+                        <a href="../index.html"></a>
                     </h1>
                     <div class="log-in">
                         <a class="search" href="javascript:void(0);"></a>
@@ -72,8 +72,31 @@
                                         <i></i>
                                     </div>
                                 </div>
+                            </div>
+                            <i></i>
+                        </div>
+                        <!-- 列表 -->
+                        <div class="list-inner">
+                            <div class="list-lf">
+                                <P class="people">阿不来提.阿不都热西提</P>
+                                <P class="addrss">新疆维吾尔自治区波尔塔蒙古自治州塔格特90团忽热郭木村9连5区13号</P>
+                                <P class="phone">186****5149</P>
+                            </div>
+                            <div class="list-ri">
+                                <a href="javascript:void:(0);" class="active">默认</a>
+                                <a href="javascript:void:(0);">编辑</a>
+                                <div class="list-delect">
+                                    <a href="javascript:void:(0);">删除</a>
+                                    <!-- 提示信息框 -->
+                                    <div class="tooltips">
+                                        <a class="yes-delect" href="javascript:void(0);">确定删除</a>
+                                        <a class="no-delect" href="javascript:void(0);">不删除</a>
+                                        <i></i>
+                                    </div>
+                                </div>
 
                             </div>
+                            <i></i>
                         </div>
                         <!-- 列表 -->
                         <div class="list-inner">
@@ -96,31 +119,10 @@
                                 </div>
 
                             </div>
+                            <i></i>
                         </div>
                         <!-- 列表 -->
-                        <div class="list-inner">
-                            <div class="list-lf">
-                                <P class="people">阿不来提.阿不都热西提</P>
-                                <P class="addrss">新疆维吾尔自治区波尔塔蒙古自治州塔格特90团忽热郭木村9连5区13号</P>
-                                <P class="phone">186****5149</P>
-                            </div>
-                            <div class="list-ri">
-                                <a href="javascript:void:(0);">默认</a>
-                                <a href="javascript:void:(0);">编辑</a>
-                                <div class="list-delect">
-                                    <a href="javascript:void:(0);">删除</a>
-                                    <!-- 提示信息框 -->
-                                    <div class="tooltips">
-                                        <a class="yes-delect" href="javascript:void(0);">确定删除</a>
-                                        <a class="no-delect" href="javascript:void(0);">不删除</a>
-                                        <i></i>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- 列表 -->
-                        <div class="list-inner">
+                        <div class="list-inner active">
                             <div class="list-lf">
                                 <P class="people">阿不来提.阿不都热西提</P>
                                 <P class="addrss">新疆维吾尔自治区波尔塔蒙古自治州塔格特90团忽热郭木村9连5区13号</P>
@@ -140,6 +142,7 @@
                                 </div>
 
                             </div>
+                            <i></i>
                         </div>
                     </div>
                     <div class="showmore">
@@ -147,7 +150,7 @@
                     </div>
                     <div class="sm-dw">
                         <span>商品信息</span>
-                        <a href="">返回购物车修改</a>
+                        <a href="cart.html">返回购物车修改</a>
                     </div>
                     <div class="goods-mg">
                         <!-- 列表 -->
@@ -179,53 +182,130 @@
                     </div>
                     <div class="send-sty">
                         <div class="sd-pay">
-                            支付方式<a href="">在线支付</a>
+                            支付方式<a class="active" href="javascript:void(0);">在线支付<i></i></a>
+
                         </div>
                         <div class="sd-logistics">
                             物流方式
-                            <a href="">普通快递</a>
+                            <a href="javascript:void(0);">普通快递<i></i></a>
+
                         </div>
                         <div class="sd-invoice">
-                            发票信息<a href="">不开发票</a>
-                            <a href="">开发票</a>
+                            发票信息
+                            <a href="javascript:void(0);" class=" invoice active">不开发票<i></i></a>
+                            <a href="javascript:void(0);" class=" invoice">开发票<i></i></a>
                             <input type="text" placeholder="用户名或邮件地址">
-                            <a href="">保存</a>
+                            <a href="javascript:void(0);">保存</a>
                         </div>
 
                     </div>
-                    <div class="cart-clear-title">
-                        <span>备注</span>
-                        <span>清算</span>
+                    <div class="remark">
+                        <div>备注</div>
+                        <textarea name="msg" cols="45" rows="10"></textarea>
                     </div>
-                    <div class="cart-clear">
-
-                        <div class="remark-clear">
-                            <textarea name="msg" cols="45" rows="10"></textarea>
-                        </div>
-                        <div class="statistics-clear">
-
-                            <ul class="ul-top-clear">
-                                <li>2件商品，总金额：</li>
-                                <li>优惠金额：</li>
-                                <li>运费：</li>
-                                <li>应付总额：</li>
-
-                            </ul>
-                            <ul class="ul-down-clear">
-                                <li>￥79.00</li>
-                                <li>-￥0.00</li>
-                                <li>￥0.00</li>
-                                <li>￥168.00</li>
-
-                            </ul>
-                        </div>
+                    <div class="statistics">
+                        <ul class="ul-top">
+                            <li>数量</li>
+                            <li>单价</li>
+                            <li>小计</li>
+                            <li>优惠</li>
+                            <li>运费</li>
+                            <li>实际应付</li>
+                        </ul>
+                        <ul class="ul-down">
+                            <li>2</li>
+                            <li>x</li>
+                            <li>￥79.00</li>
+                            <li>=</li>
+                            <li>￥158.00</li>
+                            <li>-</li>
+                            <li>￥0.00</li>
+                            <li>+</li>
+                            <li>￥10.00</li>
+                            <li>=</li>
+                            <li>￥168.00</li>
+                        </ul>
                     </div>
                     <div class="submit-order">
-                        <a href="">提交订单</a>
+                        <a href="tip.html">提交订单</a>
                     </div>
                 </div>
             </div>
 
+            <!-- 新增地址 -->
+            <div class="address-box">
+                <div class="address-warp">
+                    <div class="aw-top">
+                        <span>新增地址</span>
+                        <a href=""></a>
+                    </div>
+                    <div class="re-middle">
+                        <div class="md-lf">
+                            <label for="">
+                                <span>*</span> 收货人</label>
+                            <input type="text">
+                            <div class="lf-tip">请填写收货人！</div>
+                        </div>
+                        <div class="md-ri">
+                            <label for="">
+                                <span>*</span> 联系电话</label>
+                            <input type="text">
+                            <div class="lf-tip">填写的手机号错误！</div>
+                        </div>
+                    </div>
+                    <div class="ad-middle">
+                        <!-- 三级联动选项框 -->
+                        <div class="selecttip">
+                            <div><span>*</span> 所在地区</div>
+                            <div class="sl-tip">请填写完整的所在地区！</div>
+                        </div>
+                        <div id="city">
+
+                            <select id="sheng" class="shengji">
+                                <option value="">-请选择-</option>
+                                <!--先创建三个下拉栏，分别对应 省 市 县-->
+                            </select>
+
+                            <select id="shi" class="shiji">
+                                <option value="">-请选择-</option>
+                               
+                            </select>
+
+                            <select id="xian" class="xianji">
+                                <option value="">-请选择-</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="de-middle">
+                        <label for=""><span>*</span> 详细地址</label>
+                        <input type="text" placeholder="请填写详细地址！">
+                        <div class="lf-tip">填写详细地址！</div>
+                    </div>
+                    <div class="alias">
+                        <div class="as-lf">
+                            <label for="">地址别名</label>
+                            <input type="text">
+                        </div>
+                        <div class="as-ri">
+                            <div>常用别名</div>
+                            <div class="ri-select">
+                                <a href="javascript:void(0);">家<i></i></a>
+                                <a href="javascript:void(0);">公司<i></i></a>
+                                <a href="javascript:void(0);">父母家<i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bt-submit">
+                        <div class="bs-lf ip-box">
+                            <input type="checkbox" id="la1">
+                            <label for="la1" class="ip-lable">设为默认地址</label>
+                        </div>
+                        <div class="bs-ri">
+                            <a href="javascript:void(0)">保存地址</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="footer-top">
@@ -272,6 +352,11 @@
 
         </footer>
     </div>
+    <script src="../js/public.js"></script>
+    <script src="../js/address.js"></script>
+    <!-- <script src="../js/submitdata.js"></script> -->
+
+
 </body>
 
 </html>

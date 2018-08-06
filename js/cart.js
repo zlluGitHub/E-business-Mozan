@@ -11,6 +11,7 @@ for (var i = 0; i < numreduce.length; i++) {
 // 登录
 login();
 
+
 //全选判断
 var listallinput = document.querySelectorAll('.list-input input');
 var selectallinputtop = document.querySelector('.select-all input');
@@ -65,6 +66,7 @@ for (let i = 0; i < tooltips.length; i++) {
             var delecteleparent = this.parentNode.parentNode.parentNode.parentNode;
             var delectelechild = this.parentNode.parentNode.parentNode;
             delecteleparent.removeChild(delectelechild);
+            clearallgoods();
         }
 
     }
@@ -72,28 +74,41 @@ for (let i = 0; i < tooltips.length; i++) {
 
 //多个商品删除操作
 document.querySelector('.bottom-delect a').onclick = function(e) {
-    var listallinput = document.querySelectorAll('.list-input input');
-    if (listallinput.length >= 0) {
-        var delectmark = confirm('您确定要删除所选商品吗？');
-        if (delectmark) {
-            for (let i = 0; i < listallinput.length; i++) {
-                if (listallinput[i].checked) {
-                    var delecteleparent = listallinput[i].parentNode.parentNode.parentNode;
-                    var delectelechild = listallinput[i].parentNode.parentNode;
-                    delecteleparent.removeChild(delectelechild);
+        var listallinput = document.querySelectorAll('.list-input input');
+        if (listallinput.length >= 0) {
+            var delectmark = confirm('您确定要删除所选商品吗？');
+            if (delectmark) {
+                for (let i = 0; i < listallinput.length; i++) {
+                    if (listallinput[i].checked) {
+                        var delecteleparent = listallinput[i].parentNode.parentNode.parentNode;
+                        var delectelechild = listallinput[i].parentNode.parentNode;
+                        delecteleparent.removeChild(delectelechild);
+                        clearallgoods();
+
+                    };
 
                 };
+            }
 
-            };
-        }
+        } else {
+            confirm('请选择您要删除的商品！')
+        };
 
-    } else {
-        confirm('请选择您要删除的商品！')
+
+    }
+    // 清空购物车
+function clearallgoods() {
+    //判断购物车是否为空
+    var listallinputs = document.querySelectorAll('.list-input input');
+    if (listallinputs.length <= 0) {
+        var sectionbox = document.querySelector('.section-box');
+        var cartcontent = document.querySelector('.cart-content');
+        var cartbottom = document.querySelector('.cart-bottom');
+        sectionbox.removeChild(cartbottom);
+        cartcontent.innerHTML = '<div class="box-wukong"><img src="../images/wukong_03.jpg" alt=""></div>';
+        // window.location.href = '../page/cartempty.html';
     };
-
-
 }
-
 
 
 

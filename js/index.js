@@ -57,7 +57,7 @@ function changesingleSum(reduce, add, fill) {
 login();
 
 // 倒计时
-Countdown(3, 15, 42, 59);
+Countdown(9, 15, 42, 59);
 
 function Countdown(targetDateTime, targetHoursTime, targetMinutesTime, targetSecondsTime) {
     var Time = setInterval(Timekeeping, 1000);
@@ -106,3 +106,10 @@ function Countdown(targetDateTime, targetHoursTime, targetMinutesTime, targetSec
         };
     };
 };
+document.querySelector('.sb-line').onclick = function(e) {
+    var marklogin = confirm('请您登录后添加！');
+    if (marklogin) {
+        document.querySelector('.login-shade').style.display = 'flex';
+        // location.href = 'page/addcarte.html';
+    }
+}
