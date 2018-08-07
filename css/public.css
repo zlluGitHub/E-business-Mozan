@@ -204,6 +204,20 @@ header .left-nav a {
 
 /* 中间内容样式 */
 
+section .top-left span {
+    columns: red;
+}
+
+section .top-left span {
+    font-size: 18px;
+    padding: 0px 3px;
+}
+
+section .top-left span strong {
+    color: red;
+    padding: 0px 3px;
+}
+
 .section-box {
     width: 1200px;
     margin: 0px auto;
@@ -311,10 +325,12 @@ footer .footer-left ul li:nth-child(6) {
 }
 
 footer .footer-left ul li:nth-child(7) {
+    background-size: 100%;
     background: url('../images/icons_22.jpg') 0px 0px no-repeat;
 }
 
 footer .footer-left ul li:nth-child(8) {
+    background-size: 100%;
     background: url('../images/icons_23.jpg') 0px 0px no-repeat;
 }
 

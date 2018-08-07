@@ -105,22 +105,28 @@ passwordtest.onblur = function() {
 
 var codetest = document.querySelector('.code-test');
 codetest.onblur = function() {
-    var getvalue = this.value;
-    var regex = /HvdHN/;
-    if (!regex.test(getvalue)) {
-        this.value = '';
-        this.setAttribute('placeholder', '请填写正确的验证码！');
-        addClass(this, 'active');
-        addClass(this, 'pladerecolo');
+        var getvalue = this.value;
+        var regex = /HvdHN/;
+        if (!regex.test(getvalue)) {
+            this.value = '';
+            this.setAttribute('placeholder', '请填写正确的验证码！');
+            addClass(this, 'active');
+            addClass(this, 'pladerecolo');
+        } else {
+            removeClass(this, 'active');
+            removeClass(this, 'pladerecolo');
+        }
+
+    }
+    //判断是否登录
+document.querySelector('.cleck-submit').onclick = function() {
+
+    if (phonetest.value === '18230086651' && passwordtest.value === '123456') {
+        location.href = 'page/cart.html';
     } else {
-        removeClass(this, 'active');
-        removeClass(this, 'pladerecolo');
+        alert('账号或密码输入有误，请重新输入！')
     }
 
-}
-var clecksubmit = document.querySelector('.cleck-submit');
-clecksubmit.onclick = function() {
-    location.href = 'index.html';
     //数据提交
 };
 

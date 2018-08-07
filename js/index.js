@@ -60,12 +60,14 @@ login();
 Countdown(9, 15, 42, 59);
 
 function Countdown(targetDateTime, targetHoursTime, targetMinutesTime, targetSecondsTime) {
-    var Time = setInterval(Timekeeping, 1000);
+
     var dates = document.querySelector('.dates');
     var houers = document.querySelector('.houers');
     var minutes = document.querySelector('.minutes');
     var secouds = document.querySelector('.secouds');
     var timeContent = document.querySelector('.time-content');
+    Timekeeping();
+    var Time = setInterval(Timekeeping, 1000);
 
     function Timekeeping() {
         var date = new Date();
@@ -107,6 +109,13 @@ function Countdown(targetDateTime, targetHoursTime, targetMinutesTime, targetSec
     };
 };
 document.querySelector('.sb-line').onclick = function(e) {
+    var marklogin = confirm('请您登录后添加！');
+    if (marklogin) {
+        document.querySelector('.login-shade').style.display = 'flex';
+        // location.href = 'page/addcarte.html';
+    }
+}
+document.querySelector('.share').onclick = function(e) {
     var marklogin = confirm('请您登录后添加！');
     if (marklogin) {
         document.querySelector('.login-shade').style.display = 'flex';

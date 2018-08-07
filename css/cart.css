@@ -9,20 +9,6 @@ section .box-wukong {
     margin-bottom: 290px;
 }
 
-section .top-left span {
-    font-size: 18px;
-    padding: 0px 3px;
-}
-
-section .top-left span strong {
-    color: red;
-    padding: 0px 3px;
-}
-
-section .top-left span {
-    columns: red;
-}
-
 section .top-right span:nth-child(1) {
     border-bottom: 4px solid#000;
 }

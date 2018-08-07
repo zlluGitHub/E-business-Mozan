@@ -183,3 +183,21 @@ function allListprice() {
     }
     document.querySelector('.right-price').innerText = '￥' + allprice.toFixed(2);
 }
+//去结算时判断是否选择商品
+document.querySelector('.bottom-right a').onclick = function(e) {
+    marknum = false;
+    var listallinput = document.querySelectorAll('.list-input input');
+    for (var i = 0; i < listallinput.length; i++) {
+        // console.log(listallinput);
+
+        if (listallinput[i].checked) {
+            marknum = true;
+        }
+    }
+    if (marknum) {
+        location.href = '../page/fillorder.html';
+    } else {
+        alert('请选择您要购买的商品！');
+
+    }
+}
