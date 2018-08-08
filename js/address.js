@@ -176,6 +176,7 @@ document.querySelector('.bs-ri a').onclick = function(e) {
         changeinformation.children[0].children[1].innerText = demiddle.value;
         changeinformation.children[0].children[2].innerText = mdriinput.value;
         document.querySelector('.address-box').style.display = 'none';
+        changeinformation = addressbox;
     }
     //事件动态绑定
     eventBinding();

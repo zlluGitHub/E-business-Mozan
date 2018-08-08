@@ -721,3 +721,9 @@ section .tooltips a:nth-child(2) {
 .ip-box input:checked+.ip-lable::after {
     background-image: url('../images/inputpic_03.jpg');
 }
+
+@media screen and (max-width:1200px) {
+    .body-box {
+        width: 1200px;
+    }
+}
