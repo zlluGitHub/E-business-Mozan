@@ -147,12 +147,7 @@ document.querySelector('.bs-ri a').onclick = function(e) {
                     </div>
                     <i></i>`;
 
-    var receivelist = document.querySelector('.receive-list');
-    // var listinner = document.querySelectorAll('.list-inner');
-    var creatediv = document.createElement('div');
-    creatediv.setAttribute('class', 'list-inner');
-    creatediv.innerHTML = template;
-    receivelist.prepend(creatediv);
+
     //判断填写是否正确
     var mdlf = document.querySelector('.md-lf .lf-tip');
     var mdri = document.querySelector('.md-ri .lf-tip');
@@ -165,6 +160,13 @@ document.querySelector('.bs-ri a').onclick = function(e) {
     } else if (sltip.style.color === 'red') {
         alert('详细地址填写不正确，请重新输入！')
     } else {
+
+        var receivelist = document.querySelector('.receive-list');
+        // var listinner = document.querySelectorAll('.list-inner');
+        var creatediv = document.createElement('div');
+        creatediv.setAttribute('class', 'list-inner');
+        creatediv.innerHTML = template;
+        receivelist.prepend(creatediv);
         document.querySelector('.address-box').style.display = 'none';
     }
     //事件动态绑定
