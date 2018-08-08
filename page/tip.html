@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="submit-order">
-                        <a href="checkstand.html">提交订单</a>
+                        <a href="javascript:void(0);">提交订单</a>
                     </div>
                 </div>
             </div>
@@ -192,9 +192,16 @@
     <script src="../js/public.js"></script>
     <script>
         shippingInformation();
+        //判断是否选择支付方式
+        document.querySelector('.submit-order a').onclick = function(e) {
+            var sdpay = document.querySelector('.sd-pay a')
+            if (!transform(sdpay, 'active')) {
+                alert('请选择支付方式！')
+            } else {
+                location.href = '../page/checkstand.html';
+            }
+        }
     </script>
-
-    <!-- <script src="../js/submitdata.js"></script> -->
 </body>
 
 </html>

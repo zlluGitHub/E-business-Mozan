@@ -1,6 +1,24 @@
 //  新增地址
 document.querySelector('.receive-box a').onclick = function(e) {
+    //清空所有数据
+    document.querySelector('.md-lf input').value = '';
+    document.querySelector('.de-middle input').value = '';
+    document.querySelector('.md-ri input').value = '';
+    // 新增地址区输入框验证
+    var mdlf = document.querySelector('.md-lf .lf-tip');
+    var mdri = document.querySelector('.md-ri .lf-tip');
+    var sltip = document.querySelector('.selecttip .sl-tip');
+    var demiddle = document.querySelector('.de-middle .lf-tip');
+    mdlf.innerText = '请填写收货人！';
+    mdlf.style.color = 'red';
+    mdri.innerText = '请填写手机号！';
+    mdri.style.color = 'red';
+    sltip.innerText = '请填写完整的所在地区！';
+    sltip.style.color = 'red';
+    demiddle.innerText = '请填写详细地址！';
+    demiddle.style.color = 'red';
     document.querySelector('.address-box').style.display = 'flex';
+
 }
 document.querySelector('.aw-top a').onclick = function(e) {
         document.querySelector('.address-box').style.display = 'none';
@@ -65,6 +83,7 @@ function eventBinding() {
     var listritwo = document.querySelectorAll('.list-ri>a:nth-child(2)');
     for (var i = 0; i < listritwo.length; i++) {
         listritwo[i].onclick = function(e) {
+
             // 显示新增地址框
             document.querySelector('.address-box').style.display = 'flex';
             //获取本例所需值
@@ -72,7 +91,7 @@ function eventBinding() {
 
             var addrss = this.parentNode.parentNode.querySelector('.list-lf .addrss').innerText;
             var phone = this.parentNode.parentNode.querySelector('.list-lf .phone').innerText;
-
+            //将当前需要修改的数据同步到修改框
             document.querySelector('.md-lf input').value = people;
             document.querySelector('.de-middle input').value = addrss;
             document.querySelector('.md-ri input').value = phone;
@@ -96,7 +115,6 @@ function eventBinding() {
 
 
 //新增地址添加
-
 document.querySelector('.bs-ri a').onclick = function(e) {
     var mdlfinput = document.querySelector('.md-lf input');
     var mdriinput = document.querySelector('.md-ri input');
@@ -135,7 +153,20 @@ document.querySelector('.bs-ri a').onclick = function(e) {
     creatediv.setAttribute('class', 'list-inner');
     creatediv.innerHTML = template;
     receivelist.prepend(creatediv);
-    document.querySelector('.address-box').style.display = 'none';
+    //判断填写是否正确
+    var mdlf = document.querySelector('.md-lf .lf-tip');
+    var mdri = document.querySelector('.md-ri .lf-tip');
+    var sltip = document.querySelector('.selecttip .sl-tip');
+
+    if (mdlf.style.color === 'red') {
+        alert('收货人填写不正确，请重新输入！')
+    } else if (mdri.style.color === 'red') {
+        alert('联系电话填写不正确，请重新输入！')
+    } else if (sltip.style.color === 'red') {
+        alert('详细地址填写不正确，请重新输入！')
+    } else {
+        document.querySelector('.address-box').style.display = 'none';
+    }
     //事件动态绑定
     eventBinding();
 };
@@ -228,19 +259,18 @@ for (var i = 0; i < riselect.length; i++) {
 function newAddaddressverify() {
     var mdlf = document.querySelector('.md-lf .lf-tip');
     var mdri = document.querySelector('.md-ri .lf-tip');
-    var demiddle = document.querySelector('.de-middle .lf-tip');
     var sltip = document.querySelector('.selecttip .sl-tip');
-    var shengtext = '';
+    var demiddle = document.querySelector('.de-middle .lf-tip');
+
     document.querySelector('.md-lf input').onblur = function() {
         if (this.value === '') {
             mdlf.innerText = '请填写收货人！';
             mdlf.style.color = 'red';
+
+
         } else {
             mdlf.innerText = '填写正确！';
             mdlf.style.color = 'green';
-            // 获取值
-            var sheng = document.querySelector('#sheng');
-            shengtext = sheng.options[sheng.selectedIndex].text;
         }
 
     }
@@ -248,6 +278,9 @@ function newAddaddressverify() {
         if (this.value === '') {
             mdri.innerText = '请填写手机号！';
             mdri.style.color = 'red';
+
+
+
         } else {
             mdri.innerText = '填写正确！';
             mdri.style.color = 'green';
@@ -259,6 +292,9 @@ function newAddaddressverify() {
         if (this.value === '请选择') {
             sltip.innerText = '请填写完整的所在地区！';
             sltip.style.color = 'red';
+
+
+
         } else {
             sltip.innerText = '填写正确！';
             sltip.style.color = 'green';
@@ -278,6 +314,7 @@ function newAddaddressverify() {
         if (this.value === '') {
             demiddle.innerText = '请填写详细地址！';
             demiddle.style.color = 'red';
+
         } else {
             demiddle.innerText = '填写正确！';
             demiddle.style.color = 'green';
@@ -285,26 +322,7 @@ function newAddaddressverify() {
 
     }
 }
-// 将数据添加到详细地址处
-// threeAddress();
 
-// function threeAddress() {
-//     var city = document.querySelectorAll('#city select');
-//     for (var i = 0; i < city.length; i++) {
-//         city[i].onchange = function() {
-//             var demiddle = document.querySelector('.de-middle input');
-//             var sheng = document.querySelector('#sheng');
-//             var shengtext = sheng.options[sheng.selectedIndex].text;
-//             var shi = document.querySelector('#shi');
-//             var shitext = shi.options[shi.selectedIndex].text;
-//             var xian = document.querySelector('#xian');
-//             var xiantext = xian.options[xian.selectedIndex].text;
-
-//             demiddle.innerText = shengtext + shitext + xiantext;
-//         }
-
-//     }
-// }
 //显示更多
 document.querySelector('.showmore a').onclick = function(e) {
         alert('对不起！已没有更多！')
