@@ -113,6 +113,7 @@ section .receive-top a {
 
 .list-ri .list-delect>a {
     padding-left: 25px;
+    padding-bottom: 15px;
     color: #000;
     background: url('../images/delect_07.jpg') 0px 4px no-repeat;
 }

@@ -567,8 +567,9 @@ input.pladerecolo:-ms-input-placeholder {
 /* 气泡提示样式 */
 
 section .tooltips {
-    top: 35px;
+    top: 40px;
     left: -150px;
+    z-index: 20;
     display: none;
     justify-content: center;
     box-shadow: 0px 0px 6px 3px #fbb7b6;
@@ -597,12 +598,12 @@ section .tooltips a {
 
 section .tooltips a:nth-child(1) {
     background-color: red;
-    width: 72px;
+    width: 100px;
     height: 32px;
 }
 
 section .tooltips a:nth-child(2) {
-    width: 125px;
+    width: 100px;
     height: 32px;
     background-color: #2b2e33;
 }

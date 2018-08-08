@@ -25,6 +25,8 @@ document.querySelector('.aw-top a').onclick = function(e) {
     }
     //事件动态绑定
 eventBinding();
+var addressbox = document.querySelector('.address-box')
+var changeinformation = addressbox;
 
 function eventBinding() {
     //地址是否是默认
@@ -88,7 +90,6 @@ function eventBinding() {
             document.querySelector('.address-box').style.display = 'flex';
             //获取本例所需值
             var people = this.parentNode.parentNode.querySelector('.list-lf .people').innerText;
-
             var addrss = this.parentNode.parentNode.querySelector('.list-lf .addrss').innerText;
             var phone = this.parentNode.parentNode.querySelector('.list-lf .phone').innerText;
             //将当前需要修改的数据同步到修改框
@@ -106,8 +107,10 @@ function eventBinding() {
             demiddle.style.color = 'green';
             demiddle.innerText = '请修改详细联系地址！';
             //删除旧地址
-            var clickele = this.parentNode.parentNode;
-            document.querySelector('.receive-list').removeChild(clickele);
+            changeinformation = this.parentNode.parentNode;
+
+
+
         }
 
     }
@@ -126,8 +129,9 @@ document.querySelector('.bs-ri a').onclick = function(e) {
     var xiantext = xian.options[xian.selectedIndex].text;
     var demiddle = document.querySelector('.de-middle input');
     // var aslfinput = document.querySelector('.as-lf input');
-
-    var template = `<div class="list-lf">
+    // 判断是新增地址还是编辑地址
+    if (changeinformation === addressbox) {
+        var template = `<div class="list-lf">
                         <P class="people">${mdlfinput.value}</P>
                         <P class="addrss">${shengtext + shitext + xiantext + demiddle.value}</P>
                         <P class="phone">${mdriinput.value}</P>
@@ -146,27 +150,31 @@ document.querySelector('.bs-ri a').onclick = function(e) {
                         </div>
                     </div>
                     <i></i>`;
+        //判断填写是否正确
+        var mdlf = document.querySelector('.md-lf .lf-tip');
+        var mdri = document.querySelector('.md-ri .lf-tip');
+        var sltip = document.querySelector('.selecttip .sl-tip');
 
+        if (mdlf.style.color === 'red') {
+            alert('收货人填写不正确，请重新输入！')
+        } else if (mdri.style.color === 'red') {
+            alert('联系电话填写不正确，请重新输入！')
+        } else if (sltip.style.color === 'red') {
+            alert('详细地址填写不正确，请重新输入！')
+        } else {
 
-    //判断填写是否正确
-    var mdlf = document.querySelector('.md-lf .lf-tip');
-    var mdri = document.querySelector('.md-ri .lf-tip');
-    var sltip = document.querySelector('.selecttip .sl-tip');
-
-    if (mdlf.style.color === 'red') {
-        alert('收货人填写不正确，请重新输入！')
-    } else if (mdri.style.color === 'red') {
-        alert('联系电话填写不正确，请重新输入！')
-    } else if (sltip.style.color === 'red') {
-        alert('详细地址填写不正确，请重新输入！')
+            var receivelist = document.querySelector('.receive-list');
+            // var listinner = document.querySelectorAll('.list-inner');
+            var creatediv = document.createElement('div');
+            creatediv.setAttribute('class', 'list-inner');
+            creatediv.innerHTML = template;
+            receivelist.prepend(creatediv);
+            document.querySelector('.address-box').style.display = 'none';
+        }
     } else {
-
-        var receivelist = document.querySelector('.receive-list');
-        // var listinner = document.querySelectorAll('.list-inner');
-        var creatediv = document.createElement('div');
-        creatediv.setAttribute('class', 'list-inner');
-        creatediv.innerHTML = template;
-        receivelist.prepend(creatediv);
+        changeinformation.children[0].children[0].innerText = mdlfinput.value;
+        changeinformation.children[0].children[1].innerText = demiddle.value;
+        changeinformation.children[0].children[2].innerText = mdriinput.value;
         document.querySelector('.address-box').style.display = 'none';
     }
     //事件动态绑定

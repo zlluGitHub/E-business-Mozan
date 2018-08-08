@@ -1,3 +1,5 @@
+//轮播初始化
+
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 10,
@@ -9,6 +11,68 @@ var swiper = new Swiper('.swiper-container', {
     }
 });
 
+
+// 登录验证
+var phonetest = document.querySelector('.phone-test');
+phonetest.onblur = function() {
+    var getvalue = this.value;
+    var regex = /^1(3[0-9]|5[012345789]|6[6]|7[135678]|8[0-9]|9[89])[0-9]{8}$/;
+    if (!regex.test(getvalue)) {
+        this.value = '';
+        this.setAttribute('placeholder', '请您填写正确的手机号！');
+        addClass(this, 'active');
+        addClass(this, 'pladerecolo');
+    } else {
+        removeClass(this, 'active');
+        removeClass(this, 'pladerecolo');
+    };
+}
+
+var passwordtest = document.querySelector('.password-test');
+passwordtest.onblur = function() {
+    var getvalue = this.value;
+    var regex = /[0-9]+/;
+    if (!regex.test(getvalue)) {
+        this.value = '';
+        this.setAttribute('placeholder', '请您填写密码！');
+        addClass(this, 'active');
+        addClass(this, 'pladerecolo');
+    } else {
+        removeClass(this, 'active');
+        removeClass(this, 'pladerecolo');
+    }
+
+}
+
+var codetest = document.querySelector('.code-test');
+codetest.onblur = function() {
+        var getvalue = this.value;
+        var regex = /HvdHN/;
+        if (!regex.test(getvalue)) {
+            this.value = '';
+            this.setAttribute('placeholder', '请填写正确的验证码！');
+            addClass(this, 'active');
+            addClass(this, 'pladerecolo');
+        } else {
+            removeClass(this, 'active');
+            removeClass(this, 'pladerecolo');
+        }
+
+    }
+    //判断是否登录
+document.querySelector('.cleck-submit').onclick = function() {
+
+    if (phonetest.value === '18230086651' && passwordtest.value === '123456') {
+        location.href = 'page/cart.html';
+    } else {
+        alert('账号或密码输入有误，请重新输入！')
+    }
+
+    //数据提交
+};
+
+
+//样式变化
 var stylea = document.querySelectorAll('.style a');
 for (var i = 0; i < stylea.length; i++) {
     stylea[i].onclick = function(e) {
