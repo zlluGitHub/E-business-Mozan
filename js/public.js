@@ -2,11 +2,11 @@
 function login() {
 
     var login = document.querySelector('.login-shade');
-    document.querySelector('.log-in div a:nth-child(1)').onclick = function(e) {
+    document.querySelector('.log-in div a:nth-child(1)').onclick = function (e) {
         login.style.display = 'flex';
 
     }
-    document.querySelector('.login-delect a').onclick = function(e) {
+    document.querySelector('.login-delect a').onclick = function (e) {
         login.style.display = 'none';
     }
 
@@ -71,9 +71,10 @@ function trim(str) {
     return str.replace(/^\s+|\s+$/g, '');
 }
 
+
 // 登录验证
 var phonetest = document.querySelector('.phone-test');
-phonetest.onblur = function() {
+phonetest.onblur = function () {
     var getvalue = this.value;
     var regex = /^1(3[0-9]|5[012345789]|6[6]|7[135678]|8[0-9]|9[89])[0-9]{8}$/;
     if (!regex.test(getvalue)) {
@@ -88,7 +89,7 @@ phonetest.onblur = function() {
 }
 
 var passwordtest = document.querySelector('.password-test');
-passwordtest.onblur = function() {
+passwordtest.onblur = function () {
     var getvalue = this.value;
     var regex = /[0-9]+/;
     if (!regex.test(getvalue)) {
@@ -104,22 +105,22 @@ passwordtest.onblur = function() {
 }
 
 var codetest = document.querySelector('.code-test');
-codetest.onblur = function() {
-        var getvalue = this.value;
-        var regex = /HvdHN/;
-        if (!regex.test(getvalue)) {
-            this.value = '';
-            this.setAttribute('placeholder', '请填写正确的验证码！');
-            addClass(this, 'active');
-            addClass(this, 'pladerecolo');
-        } else {
-            removeClass(this, 'active');
-            removeClass(this, 'pladerecolo');
-        }
-
+codetest.onblur = function () {
+    var getvalue = this.value;
+    var regex = /HvdHN/;
+    if (!regex.test(getvalue)) {
+        this.value = '';
+        this.setAttribute('placeholder', '请填写正确的验证码！');
+        addClass(this, 'active');
+        addClass(this, 'pladerecolo');
+    } else {
+        removeClass(this, 'active');
+        removeClass(this, 'pladerecolo');
     }
-    //判断是否登录
-document.querySelector('.cleck-submit').onclick = function() {
+
+}
+//判断是否登录
+document.querySelector('.cleck-submit').onclick = function () {
 
     if (phonetest.value === '18230086651' && passwordtest.value === '123456') {
         location.href = 'page/cart.html';
@@ -171,7 +172,7 @@ function next() {
 // 商品配送信息动态样式
 function shippingInformation() {
     //支付边框样式选择
-    document.querySelector('.sd-pay a').onclick = function(e) {
+    document.querySelector('.sd-pay a').onclick = function (e) {
         //判断是否含有指定class
         if (transform(this, 'active')) {
             removeClass(this, 'active');
@@ -180,7 +181,7 @@ function shippingInformation() {
         }
 
     }
-    document.querySelector('.sd-logistics a').onclick = function(e) {
+    document.querySelector('.sd-logistics a').onclick = function (e) {
         //判断是否含有指定class
         if (transform(this, 'active')) {
             removeClass(this, 'active');
@@ -193,7 +194,7 @@ function shippingInformation() {
     var invoices = document.querySelectorAll('.sd-invoice .invoice');
     for (var i = 0; i < invoices.length; i++) {
 
-        invoices[i].onclick = function(e) {
+        invoices[i].onclick = function (e) {
             for (var j = 0; j < invoices.length; j++) {
                 removeClass(invoices[j], 'active');
             }

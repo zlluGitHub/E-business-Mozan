@@ -33,6 +33,8 @@ for (var i = 0; i < sizea.length; i++) {
 var reduce = document.querySelector('.reduce');
 var add = document.querySelector('.add');
 var fill = document.querySelector('.fill');
+var selectstrong = document.querySelector('.select strong');
+var selectspan = document.querySelector('.select span');
 changesingleSum(reduce, add, fill);
 
 function changesingleSum(reduce, add, fill) {
@@ -44,12 +46,16 @@ function changesingleSum(reduce, add, fill) {
             alert('不能小于零！')
         } else {
             sum--;
+
             fill.innerText = sum;
+            selectspan.innerText = `全款金额:￥${selectstrong.innerText.replace('￥', '') * sum.toFixed()}`;
         };
     };
     add.onclick = function(e) {
         sum++;
         fill.innerText = sum;
+        var allprice =
+            selectspan.innerText = `全款金额:￥${selectstrong.innerText.replace('￥', '') * sum.toFixed()}`;
     };
 };
 

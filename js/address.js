@@ -315,6 +315,6 @@ document.querySelector('.submit-order a').onclick = function(e) {
     if (!transform(sdpay, 'active')) {
         alert('请选择支付方式！')
     } else {
-        location.href = 'file:///E:/GitHub/E-business-Mozan/page/tip.html';
+        location.href = '../page/tip.html';
     }
 }
